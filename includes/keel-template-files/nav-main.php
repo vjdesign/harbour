@@ -26,7 +26,7 @@
 			<?php endif; ?>
 		</a>
 		<?php if ( has_nav_menu( 'primary' ) || wp_get_nav_menu_object( 'Primary' ) ) : ?>
-			<a class="nav-toggle-navbar" data-nav-toggle="#nav-menu" href="#">Menu</a>
+			<a class="nav-toggle-navbar" data-nav-toggle="#nav-menu" href="#">Menu &#9776;</a>
 			<div class="nav-menu-navbar" id="nav-menu">
 				<?php
 					wp_nav_menu(

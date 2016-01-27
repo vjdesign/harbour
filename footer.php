@@ -6,7 +6,6 @@
  */
 
 ?>
-
 				</div><!-- /.container -->
 			</main><!-- /#main -->
 		</div><!-- /[data-sticky-wrap] -->
@@ -19,10 +18,10 @@
 
 			<div class="container container-large text-center" >
 
-				<?php get_template_part( 'nav', 'secondary' ); ?>
+
 
 				<div class="row">
-					<?php get_template_part( 'nav', 'social' ); ?>
+					<?php get_template_part( 'includes/keel-template-filesnav', 'social' ); ?>
 					<div class="grid-half text-left-large">
 						<?php get_search_form(); ?>
 					</div>
@@ -45,7 +44,16 @@
 					</div>
 				</div>
 
-				<p class="text-small text-left-large"><a target="_blank" href="http://gomakethings.com">Harbor for WordPress Theme by Go Make Things</a></p>
+				<div class="row">
+					<div class="grid-half text-left-large">
+						<p class="text-small">&copy; 2015 TAAI - All rights reserved. A <a target="_blank" href="http://vjdesign.com.au" target="_blank">vjdesign</a> powered by <a href="https://github.com/vjdesign/harbour" target="_blank">Harbour</a></p>
+					</div>
+					<div class="grid-half text-right-large">
+						<?php get_template_part( 'includes/keel-template-filesnav', 'secondary' ); ?>
+					</div>
+				</div>
+
+
 
 			</div>
 

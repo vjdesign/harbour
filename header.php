@@ -47,7 +47,7 @@
 
 			<?php
 				// Get site navigation
-				get_template_part( 'nav', 'main' );
+				get_template_part( 'includes/keel-template-files/nav', 'main' );
 			?>
 
 			<main id="main">

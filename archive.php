@@ -28,6 +28,9 @@ get_header(); ?>
 					<?php _e( 'Year:', 'keel' ); ?> <?php the_time('Y'); ?>...
 				<?php elseif ( is_author() ) : // If this is an author archive ?>
 					<?php _e( 'Author Archive', 'keel' ); ?>
+				<?php elseif ( is_post_type_archive( 'custom_type_sponsors' ) ) : // If this is the Pets archive ?>
+					<?php _e( 'Sponsors Archive', 'keel' ); ?>
+
 				<?php elseif ( is_post_type_archive( 'pets' ) ) : // If this is the Pets archive ?>
 					<?php
 						$options = keel_pet_listings_get_theme_options();
@@ -132,7 +135,7 @@ get_header(); ?>
 					?>
 						<?php
 							// Insert the post content
-							get_template_part( 'content', get_post_type() );
+							get_template_part( 'includes/keel-template-files/content', get_post_type() );
 						?>
 					<?php endwhile; ?>
 
@@ -157,7 +160,7 @@ get_header(); ?>
 <?php else : ?>
 	<?php
 		// If no content, include the "No post found" template
-		get_template_part( 'content', 'none' );
+		get_template_part( 'includes/keel-template-files/content', 'none' );
 	?>
 <?php endif; ?>
 

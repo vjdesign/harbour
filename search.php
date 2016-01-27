@@ -20,13 +20,13 @@ get_header(); ?>
 	?>
 		<?php
 			// Insert the post content
-			get_template_part( 'content', 'search' );
+			get_template_part( 'includes/keel-template-files/content', 'search' );
 		?>
 	<?php endwhile; ?>
 
 
 	<!-- Previous/Next page navigation -->
-	<?php get_template_part( 'nav', 'page' ); ?>
+	<?php get_template_part( 'includes/keel-template-files/nav', 'page' ); ?>
 
 
 <?php

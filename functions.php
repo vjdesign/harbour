@@ -15,7 +15,7 @@
 			'fonts' => true,
 			'social' => true,
 			'footer' => true,
-			'pets' => true,
+			//'pets' => true,
 			'paypal' => true,
 			'gallery' => true,
 			'hero' => true,
@@ -565,3 +565,9 @@
 	require_once( dirname( __FILE__) . '/includes/keel-shortcodes/keel-svg-shortcode.php' ); // Inline SVG shortcode
 	require_once( dirname( __FILE__) . '/includes/keel-set-page-width.php' ); // Custom page widths
 	require_once( dirname( __FILE__) . '/includes/keel-options/keel-theme-support.php' ); // Theme support
+
+	// load extra bits from 2016 theme
+	require_once( dirname( __FILE__) . '/includes-vj/vj-2016-functions.php' );
+	require_once( dirname( __FILE__) . '/includes-vj/vj-contact-form-shortcode.php' );
+	require_once( dirname( __FILE__) . '/includes-vj/sponsors.php' );
+	require_once( dirname( __FILE__) . '/includes-vj/display-posts-shortcode.php' );

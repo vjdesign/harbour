@@ -16,21 +16,21 @@ get_header(); ?>
 	?>
 		<?php
 			// Insert the post content
-			get_template_part( 'content', get_post_type() );
+			get_template_part( 'includes/keel-template-files/content', get_post_type() );
 		?>
 	<?php endwhile; ?>
 
 
 	<?php
 		// Previous/next page navigation
-		get_template_part( 'nav', 'page' );
+		get_template_part( 'includes/keel-template-files/nav', 'page' );
 	?>
 
 
 <?php else : ?>
 	<?php
 		// If no content, include the "No post found" template
-		get_template_part( 'content', 'none' );
+		get_template_part( 'includes/keel-template-files/content', 'none' );
 	?>
 <?php endif; ?>
 

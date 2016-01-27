@@ -16,7 +16,7 @@ get_header(); ?>
 	?>
 		<?php
 			// Insert the post content
-			get_template_part( 'content', get_post_type() );
+			get_template_part( 'includes/keel-template-files/content', get_post_type() );
 		?>
 	<?php endwhile; ?>
 

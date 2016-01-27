@@ -22,9 +22,17 @@ $options = keel_get_post_options();
 
 		<h1 class="no-margin-bottom">
 			<?php if ( is_single() ) : ?>
-				<?php the_title(); ?>
+				<?php the_title();
+					if ( has_post_thumbnail() ) {
+						the_post_thumbnail('large');
+					} ?>
 			<?php else : ?>
-				<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+				<a href="<?php the_permalink(); ?>">
+					<?php
+					if ( has_post_thumbnail() ) {
+						the_post_thumbnail('thumbnail');
+					}
+					the_title(); ?></a>
 			<?php endif; ?>
 		</h1>
 
@@ -60,6 +68,8 @@ $options = keel_get_post_options();
 			}
 		?>
 	<?php endif; ?>
+
+	
 
 	<?php
 		// If this is not the last post on the page, insert a divider
